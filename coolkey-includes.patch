@@ -1,0 +1,42 @@
+--- coolkey-1.1.0/src/coolkey/log.cpp.orig	2007-02-14 20:54:01.000000000 +0100
++++ coolkey-1.1.0/src/coolkey/log.cpp	2014-08-22 18:04:04.179081106 +0200
+@@ -23,6 +23,8 @@
+ #include <stdio.h>
+ #include "log.h"
+ #include <cstdarg>
++#include <cstdlib>
++#include <cstring>
+ #include "PKCS11Exception.h"
+ #ifndef _WIN32
+ #include "syslog.h"
+--- coolkey-1.1.0/src/coolkey/machdep.cpp.orig	2007-02-14 01:46:28.000000000 +0100
++++ coolkey-1.1.0/src/coolkey/machdep.cpp	2014-08-22 18:05:03.519078616 +0200
+@@ -20,6 +20,8 @@
+ #include "machdep.h"
+ #include "mypkcs11.h"
+ #include "PKCS11Exception.h"
++#include <cstdlib>
++#include <cstring>
+ #ifdef _WIN32
+ #include <windows.h>
+ #include <memory.h>
+--- coolkey-1.1.0/src/coolkey/object.cpp.orig	2007-02-09 19:53:21.000000000 +0100
++++ coolkey-1.1.0/src/coolkey/object.cpp	2014-08-22 18:05:30.302410825 +0200
+@@ -21,6 +21,7 @@
+ #include "PKCS11Exception.h"
+ #include "object.h"
+ #include <algorithm>
++#include <cstring>
+ 
+ using std::find_if;
+ 
+--- coolkey-1.1.0/src/coolkey/slot.cpp.orig	2007-02-16 22:16:11.000000000 +0100
++++ coolkey-1.1.0/src/coolkey/slot.cpp	2014-08-22 18:12:28.982393254 +0200
+@@ -26,6 +26,7 @@
+ #include <winscard.h>
+ #include "slot.h"
+ #include <memory.h>
++#include <memory>
+ #include "zlib.h"
+ #include "params.h"
+ 
