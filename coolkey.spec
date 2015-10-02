@@ -10,7 +10,7 @@ Source0:	http://directory.fedoraproject.org/download/coolkey/%{name}-%{version}.
 Patch0:		%{name}-includes.patch
 Patch1:		%{name}-pcsc.patch
 Patch2:		%{name}-sh.patch
-URL:		http://directory.fedoraproject.org/wiki/CoolKey
+URL:		http://pki.fedoraproject.org/wiki/CoolKey
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
